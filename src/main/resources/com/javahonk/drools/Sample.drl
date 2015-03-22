@@ -1,0 +1,13 @@
+//created on: Feb 28, 2015
+package com.javahonk.drools
+
+//list any import classes here.
+
+//declare any global variables here
+
+rule "Hello World"
+	when
+		sampleReferenceObject: Sample( printMessage =="Pizza Price" )
+	then
+		sampleReferenceObject.showMessage();		
+	end

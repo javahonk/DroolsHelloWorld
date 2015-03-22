@@ -1,0 +1,18 @@
+//created on: Feb 28, 2015
+package com.javahonk.drools
+
+//list any import classes here.
+
+
+//declare any global variables here
+
+rule "Print pizza price"
+
+   when
+		sampleReferenceObject: Sample( price > 10 )
+	then
+		PrintPizzaPrice printPizzaPrice = new PrintPizzaPrice();
+		printPizzaPrice.printPizzaPrice(sampleReferenceObject);		
+	end
+
+
